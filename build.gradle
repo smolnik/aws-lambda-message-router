@@ -24,4 +24,3 @@ task buildZip(type: Zip) {
         from configurations.runtime
     }           
 }
-mainClassName = 'net.adamsmolnik.jpb.PackageBuilderHandler'
