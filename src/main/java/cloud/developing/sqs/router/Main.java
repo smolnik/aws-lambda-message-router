@@ -1,4 +1,4 @@
-package cloud.developing.router;
+package cloud.developing.sqs.router;
 
 import java.util.List;
 import java.util.concurrent.Executors;

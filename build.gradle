@@ -24,3 +24,5 @@ task buildZip(type: Zip) {
         from configurations.runtime
     }           
 }
+
+mainClassName = 'cloud.developing.sqs.router.Main'
