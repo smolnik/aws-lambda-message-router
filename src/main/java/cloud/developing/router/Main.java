@@ -1,4 +1,4 @@
-package cloud.developing.sqs.router;
+package cloud.developing.router;
 
 import java.util.List;
 import java.util.concurrent.Executors;
@@ -24,7 +24,7 @@ public class Main {
 	public static void main(String[] args) {
 		AmazonSQS sqs = new AmazonSQSClient();
 		String returnTo = sqs.getQueueUrl("adams-come-back-home").getQueueUrl();
-		
+
 		AmazonSNS sns = new AmazonSNSClient();
 		sns.publish(new PublishRequest("arn:aws:sns:us-east-1:xyz", "Hello from Zory!").addMessageAttributesEntry("returnTo",
 				new MessageAttributeValue().withDataType("String").withStringValue(returnTo)));

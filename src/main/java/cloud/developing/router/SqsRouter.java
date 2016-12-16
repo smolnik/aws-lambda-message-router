@@ -1,4 +1,4 @@
-package cloud.developing.sqs.router;
+package cloud.developing.router;
 
 import java.time.LocalDateTime;
 
